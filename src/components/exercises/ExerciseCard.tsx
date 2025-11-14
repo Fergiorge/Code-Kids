@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Exercise, ExerciseResult } from '@types/exercise';
 import { useGameState } from '@hooks/useGameState';
 import { useSounds } from '@hooks/useSounds';
+import DragDropArea from './sequencing/DragDropArea';
 
 interface ExerciseCardProps {
   exercise: Exercise;
