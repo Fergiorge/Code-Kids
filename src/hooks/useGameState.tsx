@@ -53,7 +53,7 @@ function gameStateReducer(state: GameState, action: GameStateAction): GameState 
       if (category === 'sequencing' && newProgress[category].completed.length === 20) {
         newProgress.unlocked.events = true;
       } else if (category === 'events' && newProgress[category].completed.length === 20) {
-        newProgress.uncovered.loops = true;
+        newProgress.unlocked.loops = true;
       }
 
       saveProgress(newProgress);
