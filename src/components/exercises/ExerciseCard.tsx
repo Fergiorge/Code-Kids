@@ -4,6 +4,7 @@ import { Exercise, ExerciseResult } from '@types/exercise';
 import { useGameState } from '@hooks/useGameState';
 import { useSounds } from '@hooks/useSounds';
 import DragDropArea from './sequencing/DragDropArea';
+import CharacterDisplay from './CharacterDisplay';
 
 interface ExerciseCardProps {
   exercise: Exercise;
