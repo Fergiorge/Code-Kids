@@ -598,10 +598,12 @@ const ExerciseCard: React.FC<ExerciseCardProps> = ({
 
           {/* Character and theme info */}
           <div className="flex justify-center items-center space-x-4 mb-6">
-            <div className="text-6xl">
-              {exercise.visualTheme === 'robot' ? '🤖' :
-               exercise.visualTheme === 'magic' ? '🧚' : '🐱'}
-            </div>
+            <CharacterDisplay
+              character={exercise.visualTheme === 'robot' ? 'robot' :
+                       exercise.visualTheme === 'magic' ? 'fairy' : 'cat'}
+              expression="happy"
+              size="large"
+            />
             <div>
               <div className="text-lg font-bold text-gray-700 font-child">
                 {exercise.character}
